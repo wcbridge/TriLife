@@ -4,7 +4,7 @@ import { Card, CardImage, CardContent, CardHeader, CardHeaderIcon, CardHeaderTit
 // import { withHelpersModifiers } from 'bloomer';
 
 export const Tuesday = () => (
-  <Card>
+  <Card className="tuesday">
     <CardHeader>
       <CardHeaderTitle>
         Tuesday

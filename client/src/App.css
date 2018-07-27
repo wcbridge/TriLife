@@ -161,9 +161,8 @@ body {
   align-content: stretch;
 }
 
-.card {
-  margin-top: 15px;
-  padding: 5px 15px 5px 20px;
+.textarea {
+  margin-bottom: 10px;
 }
 
 .input_field {
@@ -204,7 +203,7 @@ body {
 }
 /*------------ CALENDAR ------------*/
 .calendar_container {
-  width: 45% !important;
+  width: 65% !important;
   min-height: 50vh !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -222,4 +221,24 @@ body {
 
 .card {
   margin-left: 5px;
+}
+
+.sunday, .monday, .tuesday {
+  padding: 0 20px 20px 20px;
+}
+
+.wednesday {
+  padding: 0 10px 20px 10px;
+}
+
+.thursday {
+  padding: 0 15px 20px 15px;
+}
+
+.friday {
+  padding: 0 30px 20px 30px;
+}
+
+.saturday {
+  padding: 0 21px 20px 21px;
 }
