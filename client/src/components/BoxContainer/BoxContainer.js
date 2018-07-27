@@ -1,7 +1,7 @@
 import React from "react";
 
 const BoxContainer = ({ children }) => (
-  <div className="box section_container">
+  <div className="box section_container calendar_container">
     {children}
   </div>
 );

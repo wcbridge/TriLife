@@ -6,7 +6,6 @@ import AboutBtn from "../../components/AboutBtn";
 import AddHoursBtn from "../../components/AddHoursBtn";
 import CurrentSchedBtn from "../../components/CurrentSchedBtn";
 import BoxContainer from "../../components/BoxContainer";
-import Footer from "../../components/Footer";
 
 class Home extends Component {
 
@@ -19,9 +18,8 @@ class Home extends Component {
         <BoxContainer>
           <Link to="/about"><AboutBtn /></Link>
           <Link to="/addtime"><AddHoursBtn /></Link>
-          <CurrentSchedBtn />
+          <Link to="/calendar"><CurrentSchedBtn /></Link>
         </BoxContainer>
-        {/* <Footer /> */}
       </Container>
     );
   }

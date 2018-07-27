@@ -4,11 +4,12 @@ import { Container } from "../../components/Grid";
 import WelcomeUser from "../../components/WelcomeUser";
 import BoxContainer from "../../components/BoxContainer";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-import Category from "../../components/Category";
-import CategoryContainer from "../../components/Category/CategoryContainer";
+import CategoryContainer from "../../components/CategoryContainer";
 import { List, ListItem } from "../../components/List";
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
+import NotesBtn from "../../components/NotesBtn";
+import "./modal.js";
 
 class AddTime extends Component {
   state = {
@@ -98,16 +99,19 @@ class AddTime extends Component {
             <List>
               {this.state.hours.map(hour => (
               <ListItem key={hour._id}>
-                        <p>
+                        <p className="free_time">
                         Free Time :         {hour.free} hrs
                         </p>
-                        <p>
+                        <p className="self_actualization">
                         Self Actualization: {hour.selfA.toFixed(1)} hrs
                         </p>
-                        <p>
+                        <p className="esteem">
                         Esteem:             {hour.esteem.toFixed(1)} hrs
                         </p>
-                      Love:               {hour.love.toFixed(1)} hrs
+                        <p className="love">
+                        Love:               {hour.love.toFixed(1)} hrs
+                        </p>
+               <NotesBtn onClick='OpenModal()'> {this.state.synopsis} </NotesBtn>       
                <DeleteBtn onClick={() => this.deleteHour(hour._id)} />
               </ListItem>
             ))}
@@ -116,6 +120,7 @@ class AddTime extends Component {
               <h3>No Results to Display</h3>
             )}
           </CategoryContainer>
+          <Link to="/calendar"><p className="next_page">Continue to the calendar</p></Link>
         </BoxContainer>
       </Container>
     );

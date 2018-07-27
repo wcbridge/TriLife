@@ -31,7 +31,7 @@ const Nav = () => (
           <a className="navbar-item" href="/addtime">
             Add Time
           </a>
-          <a className="navbar-item" href="/currenttime">
+          <a className="navbar-item" href="/calendar">
             Current Time
           </a>
         </div>

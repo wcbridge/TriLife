@@ -31,49 +31,6 @@ body {
 }
 
 /*------------ NAV ------------*/
-/* .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center; 
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  width: 100vw;
-  max-width: 100vw;
-  height: 4rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  font-family: 'Roboto', sans-serif;
-}
-
-@media screen and (max-width: 850px) {
-  .nav {
-    height: 5rem; 
-  } 
-}
-
-.log_out {
-  position: fixed;
-  right: 3rem;
-  z-index: 5;
-  top: 1rem; 
-  color: #ffffff;
-}
-*/
 .nav_logo {
   position: fixed;
   z-index: 5;
@@ -210,54 +167,59 @@ body {
 }
 
 .input_field {
-  min-width: 114%;
-  right: 1.9rem;
-}
-/*------------ FOOTER ------------*/
-/* .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -ms-flex-positive: 0;
-  flex-grow: 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  max-width: 100vw;
-  height: 5rem;
-  z-index: 10; 
-}
-  @media screen and (max-width: 800px) {
-    .footer {
-      height: 3.5rem; 
-    } 
-  }
-
-.foot_prev {
-  position: fixed;
-  left: 3rem;
-  z-index: 5; 
-  font-size: 1.2rem;
-  margin-bottom: 2rem; 
+  width: 50% !important;
+  margin-bottom: 10px;
+  right: 1.1rem;
 }
 
-.foot_next {
-  position: fixed;
-  right: 3rem;
-  z-index: 5; 
-  font-size: 1.2rem;
-  margin-bottom: 2rem; 
+.free_time {
+  background-color: orange;
 }
-  @media screen and (max-width: 800px) {
-    .foot_next, .foot_prev {
-      margin-bottom: 2rem; 
-    } 
-  } */
+
+.self_actualization {
+  background-color: blue;
+}
+
+.esteem {
+  background-color: green;
+}
+
+.love {
+  background-color: yellow;
+}
+.free_time, .self_actualization, .esteem, .love {
+  margin-bottom: 10px;
+}
+
+.list-overflow-container {
+  margin-top: 10px;
+  overflow-y: hidden;
+  border: none;
+}
+
+.next_page {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/*------------ CALENDAR ------------*/
+.calendar_container {
+  width: 45% !important;
+  min-height: 50vh !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-left: 5px;
+}
