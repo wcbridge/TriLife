@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container } from "../../components/Grid";
 import WelcomeUser from "../../components/WelcomeUser";
 import BoxContainer from "../../components/BoxContainer";
-import { Input, TextArea } from "../../components/Form";
+import { Input, TextArea, FormBtn } from "../../components/Form";
 import Category from "../../components/Category";
 import CategoryContainer from "../../components/Category/CategoryContainer";
 import { List, ListItem } from "../../components/List";
@@ -87,22 +87,27 @@ class AddTime extends Component {
             onChange={this.handleInputChange}
             name="synopsis"
           />
+          <FormBtn
+            disabled={!(this.state.free)}
+            onClick={this.handleFormSubmit}
+          >
+            Submit
+          </FormBtn>
           <CategoryContainer>
-            <Category />
             {this.state.hours.length ? (
             <List>
               {this.state.hours.map(hour => (
               <ListItem key={hour._id}>
-                <p>
-                {hour.free} hrs
-                </p>
-                <p>
-                {hour.selfA} hrs
-                </p>
-                <p>
-                {hour.esteem} hrs
-                </p>
-                {hour.love} hrs
+                        <p>
+                        Free Time :         {hour.free} hrs
+                        </p>
+                        <p>
+                        Self Actualization: {hour.selfA.toFixed(1)} hrs
+                        </p>
+                        <p>
+                        Esteem:             {hour.esteem.toFixed(1)} hrs
+                        </p>
+                      Love:               {hour.love.toFixed(1)} hrs
                <DeleteBtn onClick={() => this.deleteHour(hour._id)} />
               </ListItem>
             ))}
