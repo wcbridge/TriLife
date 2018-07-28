@@ -9,17 +9,24 @@ import { List, ListItem } from "../../components/List";
 import API from "../../utils/API";
 import DeleteBtn from "../../components/DeleteBtn";
 import NotesBtn from "../../components/NotesBtn";
-import "./modal.js";
+import Modal from "../../components/Modal";
 
 class AddTime extends Component {
-  state = {
-    hours: [],
-    free: "",
-    selfA: "",
-    esteem:"",
-    love:"",
-    synopsis: ""
-  };
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      modalState: false,
+      hours: [],
+      free: "",
+      selfA: "",
+      esteem:"",
+      love:"",
+      synopsis: ""
+    };
+    
+    this.toggleModal = this.toggleModal.bind(this);
+  } 
 
   componentDidMount() {
     this.loadHours();
@@ -71,6 +78,14 @@ class AddTime extends Component {
     }
   };
 
+  toggleModal() {
+    this.setState((prev, props) => {
+      const newState = !prev.modalState;
+
+      return { modalState: newState };
+    });
+  }
+
   render() {
     return (
       <Container fluid>
@@ -111,8 +126,15 @@ class AddTime extends Component {
                         <p className="love">
                         Love:               {hour.love.toFixed(1)} hrs
                         </p>
-               <NotesBtn onClick='OpenModal()'> {this.state.synopsis} </NotesBtn>       
-               <DeleteBtn onClick={() => this.deleteHour(hour._id)} />
+                <NotesBtn onClick={this.toggleModal} />
+                <Modal
+                  closeModal={this.toggleModal} 
+                  modalState={this.state.modalState} 
+                  title="My Notes"
+                >
+                <p>{hour.synopsis}</p>
+                </Modal>
+                <DeleteBtn onClick={() => this.deleteHour(hour._id)} />
               </ListItem>
             ))}
             </List>
