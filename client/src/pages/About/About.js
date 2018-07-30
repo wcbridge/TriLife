@@ -10,7 +10,7 @@ class About extends Component {
     return (
       <Container fluid>
         <WelcomeUser>
-          <h1 className="welcome_about">Learn about us!</h1>
+          <h1 className="welcome_about title"><span className="hours_calendar">Learn</span> about us!</h1>
         </WelcomeUser>
         <BoxContainer>
           <img className="hierarchy" src={require("../../Images/Maslows.png")} alt="Maslow" />

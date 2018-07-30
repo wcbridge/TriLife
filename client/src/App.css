@@ -180,10 +180,12 @@ body {
 
 .self_actualization {
   background-color: blue;
+  color: #dddbdb;
 }
 
 .esteem {
   background-color: green;
+  color: #dddbdb;
 }
 
 .love {
@@ -229,4 +231,8 @@ body {
 
 .card.free_hours {
   padding: 0 3.5px 0 3.5px;
+}
+
+.hours_calendar {
+  color: #655792;
 }

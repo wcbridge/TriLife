@@ -84,7 +84,7 @@ class AddTime extends Component {
     return (
       <Container fluid>
         <WelcomeUser>
-          <h1>Input your free time UserName</h1>
+          <h1 className="title">Input your free time <span className="hours_calendar">UserName</span></h1>
         </WelcomeUser>
         <BoxContainer>
           <Input 

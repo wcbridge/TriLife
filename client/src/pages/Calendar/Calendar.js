@@ -3,8 +3,6 @@ import WelcomeUser from "../../components/WelcomeUser";
 import { Container } from "../../components/Grid";
 import CalendarContainer from "../../components/CalendarContainer";
 import { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, FreeHours } from "../../components/WeeklyCalendar";
-import NotesBtn from "../../components/NotesBtn";
-import Modal from "../../components/Modal";
 
 class Calendar extends Component {
   constructor(props) {
@@ -27,7 +25,7 @@ class Calendar extends Component {
 
   render() {
     const hours = this.props.location.state;
-    const synopsis = hours.synopsis;
+    // const synopsis = hours.synopsis;
     // const esteem = hours.esteem;
     // const selfA = hours.selfA;
     // const love = hours.love;
@@ -36,7 +34,7 @@ class Calendar extends Component {
     return (
       <Container fluid>
         <WelcomeUser>
-          <h1>Distribute your hours into the calendar!</h1>
+          <h1 className="title">Plan your <span className="hours_calendar">time!</span></h1>
         </WelcomeUser>
         <CalendarContainer>
           <FreeHours hours={hours} toggle={this.toggleModal} state={this.state.modalState}/>
