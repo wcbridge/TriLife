@@ -1,22 +1,30 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import { Card, CardImage, CardContent, CardHeader, CardHeaderIcon, CardHeaderTitle, Icon, Image, Media, MediaLeft, MediaContent, Subtitle, Title, Content } from 'bloomer';
-// import { withHelpersModifiers } from 'bloomer';
+import { Card, CardContent, Content, CardHeader, CardHeaderTitle, Media, MediaContent} from 'bloomer';
+import CreateBtn from "../../components/CreateBtn";
+import "./selectFunction.js";
 
-export const Sunday = () => (
+export const Sunday = props => (
+
   <Card className="sunday">
     <CardHeader>
-      <CardHeaderTitle>
+      <CardHeaderTitle className="is-centered">
         Sunday
       </CardHeaderTitle>
     </CardHeader>
     <CardContent>
       <Media>
         <MediaContent>
-
+          <CreateBtn />
         </MediaContent>
       </Media>
+      <Content>
+        <CreateBtn />
+      </Content>
+      <Content>
+        <CreateBtn />
+      </Content>
     </CardContent>
+
   </Card>
 )
 

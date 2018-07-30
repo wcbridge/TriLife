@@ -5,4 +5,5 @@ export * from "./Wednesday";
 export * from "./Thursday";
 export * from "./Friday";
 export * from "./Saturday";
+export * from "./FreeHours";
 

@@ -27,7 +27,10 @@ body {
   min-height: 100vh;
   position: relative; 
   /* overflow: hidden; */
-  background-color: #cccccc;
+  /* background-color: #cccccc; */
+  background-image: url("./Images/trianglify.svg");
+  background-repeat: no-repeat;
+  background-size: 1920px 1080px;
 }
 
 /*------------ NAV ------------*/
@@ -220,25 +223,10 @@ body {
 }
 
 .card {
-  margin-left: 5px;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
-.sunday, .monday, .tuesday {
-  padding: 0 20px 20px 20px;
-}
-
-.wednesday {
-  padding: 0 10px 20px 10px;
-}
-
-.thursday {
-  padding: 0 15px 20px 15px;
-}
-
-.friday {
-  padding: 0 30px 20px 30px;
-}
-
-.saturday {
-  padding: 0 21px 20px 21px;
+.card.free_hours {
+  padding: 0 3.5px 0 3.5px;
 }

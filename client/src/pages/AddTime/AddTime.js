@@ -7,7 +7,6 @@ import { Input, TextArea, FormBtn } from "../../components/Form";
 import CategoryContainer from "../../components/CategoryContainer";
 import { List, ListItem } from "../../components/List";
 import API from "../../utils/API";
-import DeleteBtn from "../../components/DeleteBtn";
 import NotesBtn from "../../components/NotesBtn";
 import Modal from "../../components/Modal";
 
@@ -53,13 +52,6 @@ class AddTime extends Component {
     });
   };
 
-  handleTime = event => {
-    const {name, value} = event.target;
-    this.setState({
-      
-    })
-  }
-
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.free)
@@ -85,6 +77,8 @@ class AddTime extends Component {
       return { modalState: newState };
     });
   }
+
+
 
   render() {
     return (
@@ -113,9 +107,11 @@ class AddTime extends Component {
             {this.state.hours.length ? (
             <List>
               {this.state.hours.map(hour => (
-              <ListItem key={hour._id}>
+              <ListItem key={hour._id}> 
+              <Link to={{ pathname: '/calendar', state: { free: hour.free, selfA:hour.selfA.toFixed(1) , esteem:hour.esteem.toFixed(1) , love:hour.love.toFixed(1), synopsis: hour.synopsis } }}><p className="next_page">Continue to the calendar</p></Link>
                         <p className="free_time">
                         Free Time :         {hour.free} hrs
+                       
                         </p>
                         <p className="self_actualization">
                         Self Actualization: {hour.selfA.toFixed(1)} hrs
@@ -134,7 +130,6 @@ class AddTime extends Component {
                 >
                 <p>{hour.synopsis}</p>
                 </Modal>
-                <DeleteBtn onClick={() => this.deleteHour(hour._id)} />
               </ListItem>
             ))}
             </List>
@@ -142,7 +137,6 @@ class AddTime extends Component {
               <h3>No Results to Display</h3>
             )}
           </CategoryContainer>
-          <Link to="/calendar"><p className="next_page">Continue to the calendar</p></Link>
         </BoxContainer>
       </Container>
     );
