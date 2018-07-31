@@ -3,7 +3,7 @@ import axios from "axios";
 export default {
   // Gets all hours
   getHours: function() {
-    return axios.get("/api/hours");
+    return axios.get("/api/hours?user=" + localStorage.getItem('userId'));
   },
   // Gets the hour with the given id
   getHour: function(id) {

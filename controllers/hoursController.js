@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the hoursController
 module.exports = {
   findAll: function(req, res) {
+    console.log(req.query);
     db.Hour
       .find(req.query)
       .sort({ date: -1 }).limit(1)
@@ -16,6 +17,8 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+    console.log(req);
+
     db.Hour
       .create(req.body)
       .then(dbModel => res.json(dbModel))
