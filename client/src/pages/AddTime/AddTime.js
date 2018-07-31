@@ -34,9 +34,10 @@ class AddTime extends Component {
 
   loadHours = () => {
     API.getHours()
-      .then(res =>
+      .then(res => {
         this.setState({ hours: res.data, free: "", selfA: "",esteem: "",love:"", synopsis: "" })
-      )
+      console.log(res)})
+      
       .catch(err => console.log(err));
   };
 
