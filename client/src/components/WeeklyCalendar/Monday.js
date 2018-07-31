@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardContent, Content, CardHeader, CardHeaderTitle, Media, MediaContent} from 'bloomer';
-import CreateBtn from "../../components/CreateBtn";
+import { Card, CardContent, Content, CardHeader, CardHeaderTitle, Media, } from 'bloomer';
+import UserGeneratedPills from "../../components/UserGeneratedPills";
 
 
 export const Monday = () => (
@@ -12,15 +12,9 @@ export const Monday = () => (
     </CardHeader>
     <CardContent>
       <Media>
-        <MediaContent>
-          <CreateBtn />
-        </MediaContent>
       </Media>
       <Content>
-        <CreateBtn />
-      </Content>
-      <Content>
-        <CreateBtn />
+        <UserGeneratedPills />
       </Content>
     </CardContent>
   </Card>

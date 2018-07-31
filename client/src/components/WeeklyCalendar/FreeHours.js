@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardContent, Content, CardHeader, CardHeaderTitle, Media, MediaContent, CardFooter, CardFooterItem} from 'bloomer';
-import "./selectFunction.js";
 import NotesBtn from "../../components/NotesBtn";
 import Modal from "../../components/Modal";
 
