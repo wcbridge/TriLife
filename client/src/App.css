@@ -229,11 +229,13 @@ body {
   margin-bottom: 2px;
 }
 
-.card.free_hours {
-  padding: 0 3.5px 0 3.5px;
-}
-
 .hours_calendar {
   color: #655792;
 }
+
+.brkdwn {
+  margin-right: 5px;
+  padding: 0 5px 0 5px;
+}
+
 

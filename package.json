@@ -27,8 +27,6 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.0.17",
     "prop-types": "^15.6.2",
-    "react-beautiful-dnd": "^8.0.5",
-    "react-draggable": "^3.0.5",
     "react-transition-group": "^1.2.1"
   }
 }

@@ -36,8 +36,8 @@ class Calendar extends Component {
         <WelcomeUser>
           <h1 className="title">Plan your <span className="hours_calendar">time!</span></h1>
         </WelcomeUser>
+        <FreeHours hours={hours} toggle={this.toggleModal} state={this.state.modalState}/>
         <CalendarContainer>
-          <FreeHours hours={hours} toggle={this.toggleModal} state={this.state.modalState}/>
           <Sunday />
           <Monday />
           <Tuesday />

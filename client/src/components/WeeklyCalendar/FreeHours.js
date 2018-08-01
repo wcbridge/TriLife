@@ -5,37 +5,16 @@ import Modal from "../../components/Modal";
 
 export const FreeHours = props => (
 
-  <Card className="free_hours">
-    <CardHeader>
-      <CardHeaderTitle className="is-centered">
-        Free Hours
-      </CardHeaderTitle>
-    </CardHeader>
-    <CardContent>
-      <Media>
-        <MediaContent>
-        Self Actualization : {props.hours.selfA}
-        </MediaContent>
-      </Media>
-      <Content>
-      Esteem : {props.hours.esteem}
-      </Content>
-      <Content>
-      Love : {props.hours.love}
-      </Content>
-    </CardContent>
-    <CardFooter>
-      <CardFooterItem />
-      <NotesBtn onClick={props.toggle} />
-      <Modal
-        closeModal={props.toggle} 
-        modalState={props.state} 
-        title="My Notes"
-      >
-      <p>{props.hours.synopsis}</p>
-      </Modal>
-    </CardFooter>
-
-  </Card>
+  <div>
+    <p><span className="self_actualization brkdwn">Self Actualization : {props.hours && props.hours.selfA}</span> <span className="esteem brkdwn">Esteem : {props.hours && props.hours.esteem}</span> <span className="love brkdwn">Love : {props.hours && props.hours.love}</span>
+    <NotesBtn onClick={props.toggle} />
+    <Modal
+      closeModal={props.toggle} 
+      modalState={props.state} 
+      title="My Notes"
+    >
+    <p>{props.hours && props.hours.synopsis}</p>
+    </Modal></p>
+  </div>
 )
 

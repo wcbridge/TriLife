@@ -109,6 +109,7 @@ class AddTime extends Component {
               {this.state.hours.map(hour => (
               <ListItem key={hour._id}> 
               <Link to={{ pathname: '/calendar', state: { free: hour.free, selfA:hour.selfA.toFixed(1) , esteem:hour.esteem.toFixed(1) , love:hour.love.toFixed(1), synopsis: hour.synopsis } }}><p className="next_page">Continue to the calendar</p></Link>
+              <br />
                         <p className="free_time">
                         Free Time :         {hour.free} hrs
                        
