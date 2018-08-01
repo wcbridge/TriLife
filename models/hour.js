@@ -8,7 +8,8 @@ const scheduleSchema = new Schema({
   esteem: { type: Number, required: false },
   love: { type: Number, required: false },
   synopsis: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  user: { type: String, required: true}
 });
 
 const Hour = mongoose.model("Hour", scheduleSchema);

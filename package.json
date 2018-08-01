@@ -21,12 +21,19 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "bcrypt-nodejs": "0.0.3",
     "bloomer": "^0.6.3",
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "if-env": "^1.0.4",
     "mongoose": "^5.0.17",
-    "prop-types": "^15.6.2",
+
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2"
     "react-transition-group": "^1.2.1"
+
   }
 }

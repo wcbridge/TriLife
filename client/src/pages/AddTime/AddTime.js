@@ -33,9 +33,10 @@ class AddTime extends Component {
 
   loadHours = () => {
     API.getHours()
-      .then(res =>
+      .then(res => {
         this.setState({ hours: res.data, free: "", selfA: "",esteem: "",love:"", synopsis: "" })
-      )
+      console.log(res)})
+      
       .catch(err => console.log(err));
   };
 
@@ -62,7 +63,7 @@ class AddTime extends Component {
         selfA: this.state.free*.1,
         esteem: this.state.free*.3,
         love: this.state.free*.6,
-
+        user: localStorage.getItem('userId'),
         synopsis: this.state.synopsis
       })
         .then(res => this.loadHours())

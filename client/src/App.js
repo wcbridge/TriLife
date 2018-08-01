@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import AddTime from "./pages/AddTime";
@@ -10,11 +12,17 @@ import "./App.css";
 import "./bulma.css";
 import "./pill.css";
 
+import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 const App = () => (
   <Router>
     <div>
       <Nav />
       <Switch>
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/register" component={Register} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/addtime" component={AddTime} />
