@@ -10,6 +10,7 @@ import Calendar from "./pages/Calendar";
 import Nav from "./components/Nav";
 import "./App.css";
 import "./bulma.css";
+import "./pill.css";
 
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';

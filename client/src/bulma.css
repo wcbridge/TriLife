@@ -1492,7 +1492,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
 }
 
 .box {
-  background-color: #EB6864;
+  background-color: #8B7EB380;
   border-radius: 6px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
@@ -3257,7 +3257,7 @@ a.box:active {
 }
 
 .select select:not([multiple]) {
-  padding-right: 2.5em;
+  padding-right: 1.5em;
 }
 
 .select select[multiple] {
@@ -5338,7 +5338,8 @@ a.tag:hover {
 
 .card-content {
   background-color: none;
-  padding: 1.5rem;
+  padding: 1rem;
+  font-size: .78rem
 }
 
 .card-footer {
@@ -5979,7 +5980,7 @@ a.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: #EB6864;
+  background-color: #8B7EB380;
   min-height: 3.25rem;
   position: relative;
   z-index: 30;
