@@ -42,5 +42,11 @@ body {
 }
 
 .login_screen {
-  right: 13rem;
+  right: 22rem;
+}
+
+.register_link {
+  font-weight: bold;
+  text-decoration: aquamarine;
+  color: #655792;
 }

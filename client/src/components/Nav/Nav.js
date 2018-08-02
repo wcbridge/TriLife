@@ -47,7 +47,7 @@ const Nav = () => {
 
         <div className="navbar-end">
           <p className="navbar-item">
-            <a href="/login" onClick={() => logout}> Log Out </a>
+            <a href="/login" className="logout_link" onClick={() => logout}> Log Out </a>
           </p>
 
           <p className="navbar-item"></p>

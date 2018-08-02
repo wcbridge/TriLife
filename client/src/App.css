@@ -44,6 +44,11 @@ body {
   } 
 } 
 
+.logout_link {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
 /*------------ CONTAINER ------------*/
 .container-fluid {
   display: -webkit-box;
