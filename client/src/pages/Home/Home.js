@@ -13,7 +13,7 @@ class Home extends Component {
     return (
       <Container fluid>
         <WelcomeUser>
-          <h1>Welcome Username!</h1>
+          <h1>Welcome!</h1>
         </WelcomeUser>
         <BoxContainer>
           <Link to="/about"><AboutBtn /></Link>
