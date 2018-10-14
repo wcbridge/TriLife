@@ -1,5 +1,5 @@
 # TriLife
-TriLife is a time budgetting application, much like a budgeting appplication, that is based on Maslow's Hierarchy of Needs for Human Development. Users are able to input their free time for a week and the application will stratify the hours into percentages using Maslow's pyramid as a loose outline.
+TriLife is a time budgeting application, much like a budgeting appplication, that is based on Maslow's Hierarchy of Needs for Human Development. Users are able to input their free time for a week and the application will stratify the hours into percentages using Maslow's pyramid as a loose outline.
 
 A calendar is available for users to  to block off days and time for whatever activity or goal they want to devote some time into accomplishing.
 
