@@ -1,11 +1,10 @@
 # TriLife
-TriLife is a time budgeting application, much like a budgeting appplication, that is based on Maslow's Hierarchy of Needs for Human Development. Users are able to input their free time for a week and the application will stratify the hours into percentages using Maslow's pyramid as a loose outline.
+TriLife is a time budgeting application, much like a financial planning app, based on Maslow's Hierarchy of Needs for Human Development. Users are able to input their free time for a week and the application will stratify the hours into percentages using Maslow's pyramid as a loose outline.
 
-A calendar is available for users to  to block off days and time for whatever activity or goal they want to devote some time into accomplishing.
+A calendar is available for users to block off days and time for whatever activity or goal they want to devote some time into accomplishing.
 
 ## Technologies Used
 - [x] Mongo, Express, React, NodeJS (MERN), PassportJS, Bulma, and React-Transitions for calendar animations
-
 
 ## How to Run
 To run TriLife you will need [Bash](https://git-scm.com/downloads/), [Node](https://nodejs.org/en/), [npm](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm), [Mongo](https://docs.mongodb.com/manual/installation/), and [React](https://reactjs.org/docs/getting-started.html) .
@@ -13,7 +12,6 @@ To run TriLife you will need [Bash](https://git-scm.com/downloads/), [Node](http
 1. In Bash, to clone the repo type `git clone repo-link-here` to download TriLife.
 
 2. Then, type `cd directory-of-TriLife-foleder; npm install (or yarn)` to download the required packages.
-
 
 3. In a separate Bash window, type `mongod` and leave it open.
 
