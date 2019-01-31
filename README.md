@@ -3,6 +3,8 @@ TriLife is a time budgeting application, much like a financial planning app, bas
 
 A calendar is available for users to block off days and time for whatever activity or goal they want to devote some time into accomplishing.
 
+https://obscure-headland-35345.herokuapp.com/about
+
 ## Technologies Used
 - [x] Mongo, Express, React, NodeJS (MERN), PassportJS, Bulma, and React-Transitions for calendar animations
 
